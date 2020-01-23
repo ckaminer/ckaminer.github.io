@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>The Fantasy Gods Hate Me | Charlie Kaminer Wrote Some Stuff</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="The Fantasy Gods Hate Me" />
+<meta name="author" content="Charles Kaminer" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Introduction A running saying in my fantasy football league is ‘the fantasy gods must just hate me’. Although it’s used by some far more than others, everyone has said or thought it, at least once. Luck is an undeniably large part of the game when it comes to fantasy football. Sure there are rules that a league can implement to reduce it, but like most competitions we can never fully get rid of it." />
+<meta property="og:description" content="Introduction A running saying in my fantasy football league is ‘the fantasy gods must just hate me’. Although it’s used by some far more than others, everyone has said or thought it, at least once. Luck is an undeniably large part of the game when it comes to fantasy football. Sure there are rules that a league can implement to reduce it, but like most competitions we can never fully get rid of it." />
+<link rel="canonical" href="/fantasy_football/math/python/2020/01/22/fantasy-gods-hate-me.html" />
+<meta property="og:url" content="/fantasy_football/math/python/2020/01/22/fantasy-gods-hate-me.html" />
+<meta property="og:site_name" content="Charlie Kaminer Wrote Some Stuff" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-01-22T00:00:00-05:00" />
+<script type="application/ld+json">
+{"mainEntityOfPage":{"@type":"WebPage","@id":"/fantasy_football/math/python/2020/01/22/fantasy-gods-hate-me.html"},"author":{"@type":"Person","name":"Charles Kaminer"},"description":"Introduction A running saying in my fantasy football league is ‘the fantasy gods must just hate me’. Although it’s used by some far more than others, everyone has said or thought it, at least once. Luck is an undeniably large part of the game when it comes to fantasy football. Sure there are rules that a league can implement to reduce it, but like most competitions we can never fully get rid of it.","@type":"BlogPosting","headline":"The Fantasy Gods Hate Me","dateModified":"2020-01-22T00:00:00-05:00","datePublished":"2020-01-22T00:00:00-05:00","url":"/fantasy_football/math/python/2020/01/22/fantasy-gods-hate-me.html","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Charlie Kaminer Wrote Some Stuff" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Charlie Kaminer Wrote Some Stuff</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">The Fantasy Gods Hate Me</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2020-01-22T00:00:00-05:00" itemprop="datePublished">Jan 22, 2020
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h3 id="introduction">Introduction</h3>
+<p>A running saying in my fantasy football league is ‘the fantasy gods must just hate me’. Although it’s used by some far more than others, everyone has said or thought it, at least once. Luck is an undeniably large part of the game when it comes to fantasy football. Sure there are rules that a league can implement to reduce it, but like most competitions we can never fully get rid of it.</p>
+
+<p>Fantasy football is a game in which you, as a competitor, have no way of affecting your opponent. There are things you can try such as neutralizing some of their scoring by starting their quarterback’s recievers, or doubling down on a matchup by starting their best player’s opposing defense (PSA: these strategies are proven to be <a href="https://www.pro-football-reference.com/articles/corrgaus.htm">statistically insignificant</a>). But ultimately it comes down to a weekly generation of numbers out of two independent data sets, with each player doing nothing more than praying that theirs is higher. So then why bother having matchups? Why isn’t the standard to have a Rotisserie league where you gain points for your performance relative to the <em>entire league</em>, not just one randomly assigned opponent? Or why don’t we just name the player at the end of the season with the most points the champion? The reason is simply that matchups are fun - they give us that “any given Sunday” vibe and tickle everyone’s inner gambler. What it also means is that the “best” team doesn’t always win - it brings luck into the picture.</p>
+
+<p>Up until this season, I never put much thought into who the fantasy gods “hate”. I sort of just looked at who had the most or least points scored against them and deemed them to be the unluckiest and luckiest players in the league, respectively. But this season something else caught my eye. My team wasn’t the cream of the crop by any means (5th out of 12 most points) but it still had a win total that I didn’t think reflected my performance, at least compared to others. Our league consists of a thirteen week long regular season and this year we had 7 teams finish with 7 or more wins, 6 of which made the playoffs. My team finished with 6 wins, tied for 8th most in the league. Scoring the fifth most points and missing the playoffs by a game is not an unheard of tale, but I did notice as the year went on that I simply was never able to catch a break in terms of my opponents score. I went back and did a quick check to learn that throughout the entire season I had zero matchups where my opponent scored less than 80 points. Looking at the other participants in the league I noticed that everyone else had at least two such matchups and two teams had as many as six. This was enough to pique my interest and dig further.</p>
+
+<p>So how can we determine how luck or unlucky someone is? The way I see it there are two different streams of luck that can affect a fantasy result: roster luck and opponent luck. Roster luck is the luck that surrounds player injuries, suspensions, trades, outlier seasons (good or bad), etc. If your first round pick tears their ACL week one that is certainly unlucky. However, quantifying the impact that has on your final result is quite the tall task. At least for right now, I am not focusing on roster luck. What this post will look at is what I call opponent luck.</p>
+
+<p>As I said before, fantasy is a competition in which each side has no way of impacting their opponents score - you can’t play defense. If you score the second most points in a given week but go up against the person who scored the most, you’re eating an L. Sorry about it. And of course, on the contrary, you can score the second least amount of points but if you go up against the biggest loser of the week…you’re <a href="https://thumbs.gfycat.com/SneakyFlimsyGlobefish-mobile.mp4">eating a W</a>. This means your schedule can have a massive impact on your record, regardless of how many points you score. The goal of this project is to retroactively look at the season’s results and quantifiably determine who was the luckiest and who was the unluckiest.</p>
+
+<h3 id="gathering-baseline-data">Gathering Baseline Data</h3>
+<p>The first thing I wanted to do, after gathering all of the matchup results data from our fantasy website, was figure out every person’s mean and variance for their points scored and points against on the season. These numbers would help provide baseline inputs for further analysis.</p>
+
+<p>For a quick lesson/refresher: the mean is the average score per week, or total divided by thirteen (weeks in a season). The standard deviation is the square root of the overall variance. Variance is a cumulative value used to measure how far spread out numbers are from their mean - in this case it gives us a look into scoring consistency. For a quick example, let’s consider the following two data sets:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Set One: [ 2, 2, 3, 3 ]
+Set Two: [ 0, 5, 1, 4 ]
+</code></pre></div></div>
+
+<p>They will have the same mean of 2.5 but Set Two will have a larger variance (0.25) than Set One (4.25) since the individual numbers in Set Two have a larger cumulative distance from the mean.</p>
+
+<p>The standard deviation, also a measure of spread, is used to calculate the probability a number will fall within a certain range of the mean. In a normal distribution we expect 68% of the numbers to fall within one standard deviation of the mean. So if we have a data set with a mean of 10 and a standard deviation of 3 we would expect 68% of the numbers in our data set to fall within the range of 7 to 13. If you want to learn more or just want to read a more concise explanation you can do that <a href="https://en.wikipedia.org/wiki/68%E2%80%9395%E2%80%9399.7_rule">here</a>.</p>
+
+<p>For reference, across the entire league there was a weekly mean of <code class="highlighter-rouge">92.23</code> points scored and a standard deviation of <code class="highlighter-rouge">25.13</code>. The results for each owner are shown in the table below. Please refer to the <a href="#appendix">Appendix</a> for visual plots of this data.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Owner</th>
+      <th>Points For Total</th>
+      <th>Points For Mean</th>
+      <th>Points For Std Dev</th>
+      <th>Points Against Total</th>
+      <th>Points Against Mean</th>
+      <th>Points Against Std Dev</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>charles</td>
+      <td>1239</td>
+      <td>95.31</td>
+      <td>24.19</td>
+      <td>1319</td>
+      <td>101.46</td>
+      <td>14.09</td>
+    </tr>
+    <tr>
+      <td>charlie</td>
+      <td>1090</td>
+      <td>83.85</td>
+      <td>10.01</td>
+      <td>1095</td>
+      <td>84.23</td>
+      <td>27.79</td>
+    </tr>
+    <tr>
+      <td>connor</td>
+      <td>1288</td>
+      <td>99.08</td>
+      <td>25.35</td>
+      <td>1214</td>
+      <td>93.38</td>
+      <td>27.89</td>
+    </tr>
+    <tr>
+      <td>fish</td>
+      <td>1155</td>
+      <td>88.85</td>
+      <td>17.26</td>
+      <td>1269</td>
+      <td>97.62</td>
+      <td>27.42</td>
+    </tr>
+    <tr>
+      <td>fratt</td>
+      <td>1380</td>
+      <td>106.15</td>
+      <td>21.66</td>
+      <td>1178</td>
+      <td>90.62</td>
+      <td>26.71</td>
+    </tr>
+    <tr>
+      <td>keefe</td>
+      <td>1025</td>
+      <td>78.85</td>
+      <td>23.65</td>
+      <td>1194</td>
+      <td>91.85</td>
+      <td>17.73</td>
+    </tr>
+    <tr>
+      <td>mark</td>
+      <td>1226</td>
+      <td>94.31</td>
+      <td>26.08</td>
+      <td>1332</td>
+      <td>102.46</td>
+      <td>26.72</td>
+    </tr>
+    <tr>
+      <td>nick</td>
+      <td>909</td>
+      <td>69.92</td>
+      <td>17.12</td>
+      <td>1242</td>
+      <td>95.54</td>
+      <td>17.84</td>
+    </tr>
+    <tr>
+      <td>pine</td>
+      <td>1140</td>
+      <td>87.69</td>
+      <td>24.53</td>
+      <td>1020</td>
+      <td>78.46</td>
+      <td>16.89</td>
+    </tr>
+    <tr>
+      <td>roger</td>
+      <td>1186</td>
+      <td>91.23</td>
+      <td>20.0</td>
+      <td>1108</td>
+      <td>85.23</td>
+      <td>33.39</td>
+    </tr>
+    <tr>
+      <td>scott</td>
+      <td>1397</td>
+      <td>107.46</td>
+      <td>33.17</td>
+      <td>1179</td>
+      <td>90.69</td>
+      <td>23.5</td>
+    </tr>
+    <tr>
+      <td>tyler</td>
+      <td>1353</td>
+      <td>104.08</td>
+      <td>21.05</td>
+      <td>1238</td>
+      <td>95.23</td>
+      <td>22.8</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>This confirmed my initial thought that my team went up against an abnormally low variance of scoring  - zero matchups with opponents scoring less than 80 points - which played a part in my team’s (lack of) success. It’s a good start but it doesn’t show us everything.</p>
+
+<h3 id="relative-performance">Relative Performance</h3>
+<p>I said it above and I’ll reiterate it here - I am trying to figure out who was the most unlucky in regards to their <em>opponents performance</em>. The mean and variance of points against paints a decent picture of magnitude and consistency, respectively. But I wanted to find a way to assign a numerical value that can help show the effects of schedule randomization. Because this is a competition where players can’t affect their opponent’s score, schedule randomization can make or break a season.</p>
+
+<p>One of the first things I thought of, that was also relatively easy to compute, was how each perons’s opponents did against them relative to their yearly output. In other words, how many times did someone go up against their opponent’s best performance of the year? Second best performance? Worst performance? You get the picture. Let’s look at a basic example.</p>
+
+<p>Let’s say I lose a matchup 81-87. Relative to the league average, both 81 and 87 aren’t strong scores. On the surface I may have no reason to be upset over scoring that amount of points and losing. But what we can’t see by just looking at this one matchup is that my opponent may average 70 points a week with a standard deviation of 15. If that happened to be the case than 81 points should be enough to win that matchup roughly 75% of the time. So despite the fact that I may have put up a low number, I may still be considered unlucky if I go up against a weak opponent who has one of their best weeks of the year.</p>
+
+<p>The following table shows the relative ranking of every team’s opponents relative to their own sets of scores. There are thirteen weeks in the regular season so if I went up against a person’s high score of the season one week then that would count as 1 and if I went up against their low score of the season it would count as 13, regardless of the actual score. For this calculation the lower numbers are considered less lucky than the higher numbers. This metric may also prove useful down the line because it is not dependent on scoring rules. In other words, this will hold weight whether you have standard scoring or PPR, one QB or two, etc.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Owner</th>
+      <th>Opponent Average Relative Ranking</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>charles</td>
+      <td>5.31</td>
+    </tr>
+    <tr>
+      <td>charlie</td>
+      <td>8.62</td>
+    </tr>
+    <tr>
+      <td>connor</td>
+      <td>6.85</td>
+    </tr>
+    <tr>
+      <td>fish</td>
+      <td>6.69</td>
+    </tr>
+    <tr>
+      <td>fratt</td>
+      <td>7.15</td>
+    </tr>
+    <tr>
+      <td>keefe</td>
+      <td>7.0</td>
+    </tr>
+    <tr>
+      <td>mark</td>
+      <td>4.92</td>
+    </tr>
+    <tr>
+      <td>nick</td>
+      <td>6.46</td>
+    </tr>
+    <tr>
+      <td>pine</td>
+      <td>8.92</td>
+    </tr>
+    <tr>
+      <td>roger</td>
+      <td>8.08</td>
+    </tr>
+    <tr>
+      <td>scott</td>
+      <td>7.23</td>
+    </tr>
+    <tr>
+      <td>tyler</td>
+      <td>6.23</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>According to this metric we can see that Mark was, on average, going up against each person’s 4th or 5th best performance of the season each week. On the other side of the coin is Pine Street (Marty and Blake), whose opponents were averaging close to their 9th best (or 4th worst) performance of the year against them.</p>
+
+<p>Like in any competition, it’s important to rack up wins against the bad teams in order to minimize the impact of a loss against the stronger teams. It’s a lot harder to do that when bad teams are putting up decent numbers, relative to their own expectations. For Mark and myself there were no easy buckets. For Pine Street, Charlie, and Roger the goalie was pulled with 15 minutes to go in the third. #sports</p>
+
+<h3 id="expected-win-counts">Expected Win Counts</h3>
+<p>The final thing (for now) that I wanted to calculate was the expected number of wins for each team. At the end of the day winning is what we care about most and thus something that we should quantify if we want to determine who was lucky and who wasn’t.</p>
+
+<p>Thankfully we already have all the data we need to calculate the expected number of wins for each team. In order to figured out the expected win count I leveraged the expected value equation for a discrete random variable. That sounds a lot fancier than it is. Basically what it means is that the expected number of wins in a given week can be expressed as <code class="highlighter-rouge">the number of wins you receive if you score more than your opponent times the probability you score more than your opponent PLUS the number of wins you receive if you score less than your opponent times the proability you score less than your opponent</code>. Bear with me here. We already know by the basic laws of competition that if I score more points than my opponent then I receive “one” win. Likewise if I score less than my opponent I receive “zero” wins. Now let’s say that the probability I score more than my opponent is being expressed by the variable <em>p</em>. That means that the probability I score less than my opponent is <em>1-p</em>, assuming there are no ties. Now that we know all that we can put our expected wins into a simple equation that reads like this, where <em>E[X]</em> represents the expected number of wins in a given week:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>E[X] = (1 * p) + (0 * (1-p))
+E[X] = 1 * p
+E[X] = p
+</code></pre></div></div>
+<p>Using this expected wins equation for a single week we can then say that the expected number of wins a team is expected to get in a full season is the sum of <em>pᵢ</em> for each week where <em>pᵢ</em> is the probability that the team in question will score more points than their opponent in week i.</p>
+
+<p>Seems easy enough, but how to we calculate <em>pᵢ</em>? Great question, astute reader. Luckily since our data sets are normally distributed we can leverage the <a href="https://en.wikipedia.org/wiki/Cumulative_distribution_function">cumulative distribution function</a> or CDF. When provided a value <em>x</em> the CDF will return the probability that a value in that distrubtion (with a given mean and standard deviation) is less than or equal to <em>x</em>. This is the secret sauce that will make this all come together. Hold onto it, we’ll be back.</p>
+
+<p>For our scenario, we want to know the probability that a score from Player A’s distribution, referred to as X, will be more than a score from Player B’s distribution, referred to as Y. Using basic arithmetic we can deduce the following:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>P(X &gt; Y) = P(X - Y &gt; 0) = 1 - P(X - Y &lt;= 0)
+</code></pre></div></div>
+
+<p>From our understanding of cumulative distribution functions we know that <code class="highlighter-rouge">P(X - Y &lt;= 0)</code> is equal to the CDF of 0 for the normal distribution of <code class="highlighter-rouge">X - Y</code>. So all we need to do is figure out the mean and variance of <code class="highlighter-rouge">X - Y</code>. Because X and Y are independent, <a href="https://en.wikipedia.org/wiki/Sum_of_normally_distributed_random_variables">we know</a> that the mean of distribution <code class="highlighter-rouge">X - Y</code> is equal to the mean of X minus the mean of Y. We also know that the variance is equal to the variance of X plus the variance of Y.</p>
+
+<p>This should finally give us everything we need. To quickly summarize, the expected number of wins in a given matchup is equal to the probability that a player scores more points than their opponent. We can figure out that probability by constructing a new distribution based off of both players means and variances. Once we figure out these new means and variances we can use the cumulative distribution function and some basic arithmetic to provide an expected number of wins for a given matchup. We will run through this process for each matchup on a player’s schedule and then add up all of those expected win numbers to see how many wins each player was expected to win on the season given their scoring numbers and their schedule.</p>
+
+<p>Hopefully we’re all on the same page. If not, well then I suppose it doesn’t really matter and you’ll just have to trust me. Here are the results:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Owner</th>
+      <th>Actual Win Count</th>
+      <th>Expected Wins</th>
+      <th>Difference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>charles</td>
+      <td>6</td>
+      <td>6.834</td>
+      <td>-0.834</td>
+    </tr>
+    <tr>
+      <td>charlie</td>
+      <td>7</td>
+      <td>4.764</td>
+      <td>2.236</td>
+    </tr>
+    <tr>
+      <td>connor</td>
+      <td>8</td>
+      <td>7.789</td>
+      <td>0.211</td>
+    </tr>
+    <tr>
+      <td>fish</td>
+      <td>6</td>
+      <td>5.76</td>
+      <td>0.24</td>
+    </tr>
+    <tr>
+      <td>fratt</td>
+      <td>9</td>
+      <td>9.179</td>
+      <td>-0.179</td>
+    </tr>
+    <tr>
+      <td>keefe</td>
+      <td>4</td>
+      <td>4.368</td>
+      <td>-0.368</td>
+    </tr>
+    <tr>
+      <td>mark</td>
+      <td>5</td>
+      <td>6.886</td>
+      <td>-1.886</td>
+    </tr>
+    <tr>
+      <td>nick</td>
+      <td>2</td>
+      <td>2.476</td>
+      <td>-0.476</td>
+    </tr>
+    <tr>
+      <td>pine</td>
+      <td>9</td>
+      <td>6.041</td>
+      <td>2.959</td>
+    </tr>
+    <tr>
+      <td>roger</td>
+      <td>7</td>
+      <td>6.466</td>
+      <td>0.534</td>
+    </tr>
+    <tr>
+      <td>scott</td>
+      <td>8</td>
+      <td>8.803</td>
+      <td>-0.803</td>
+    </tr>
+    <tr>
+      <td>tyler</td>
+      <td>7</td>
+      <td>8.634</td>
+      <td>-1.634</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The expected number of wins tells us how many games each team was expected to win, given their scoring distribution and their opponent’s scoring distribution. So any team with a negative difference would be considered unlucky as they won fewer games than could be expected for a team with their schedule and scoring. Teams with a positive difference are the lucky ones as they won more games than could be expected of them. Based on our understanding of expected win differential, we can expect to see a negative correlation between the differences from this table and “Opponent Average Relative Ranking” (OARR) from above. Unsurprisingly, this shows us that the Pine Street People (with Charlie not too far behind) had a staggeringly lucky outcome while the likes of Mark and Tyler had a tough time catching any sort of breaks.</p>
+
+<p>You can see a similar calculation to this one in the <a href="#appendix">Appendix</a>. That calculation varies by comparing each team with the league-wide scoring distribution instead of their opponent’s. So instead of calculating <code class="highlighter-rouge">P(X - Y &lt;= 0)</code> for each matchup where X is a number from Player A’s distribution and Y is a number from Player B’s distribution, I calculated it where X is still Player A but Y is a number from the league-wide distribution (mean 92.23, standard deviation 95.13). You will also find a comparison between the schedule-relative expected wins and the league-relative expected wins.</p>
+
+<p>I don’t find the comparison between those calculations to have an immensely large impact on determining who is the most “lucky” but I do find it fascinating in that it demonstrates the value of having bad teams in your division/on your schedule. For more on that check out the Appendix.</p>
+
+<h3 id="but-what-does-it-all-mean-basil">But what does it all mean, <a href="https://www.youtube.com/watch?v=ZfYBsuBzulE">Basil</a>?</h3>
+<p>At this point I think you’ve heard me battle through enough bouts of verbal diarrhea and I’ve thrown enough numbers your way that we can logically form opinions on the answer to our initial question. Just how lucky (or unlucky) was everyone this year? Let’s start from the beginning and review piece by piece until we reach a verdict.</p>
+
+<p>In general, I think it’s fair to say that when a scoring average is at either extreme, a low standard deviation reinforces that extreme. In other words - if my average points against is very high then a low standard deviation is less preferable than a high one. And if my points against is very low then a low standard deviation is more preferable. The main reason I find this to be true is that margin of victory is completely irrelevant. It doesn’t matter if I win or lose by 5 or 50. So a high average combined with a low standard deviation means I’m going to have less matchups where my opponents score a relatively low number of points. Taking that same average but applying a high standard deviation means there are going to be a few matchups where I get completely blown out but there should also be a couple stinkers in there that should be easy wins.</p>
+
+<p>Knowing that, it’s fair to say that strictly looking at the distributions of points against you would probably say that Mark, myself, and Nick had the toughest battle to face. On the flip side it would be Pine Street, Charlie, and Roger who had the most luck on their side.</p>
+
+<p>The next layer we looked at was the Opponent Average Relative Rank (OARR). To me this didn’t reveal a ton of <em>new</em> information. In a way it sort of baked the points against results down into one digestable number. It certainly reiterated that Mark and I had a rough go of it and it really highlighted Pine Street, Charlie, and Roger’s fluff schedules. A couple of things that I found interesting:</p>
+<ul>
+  <li>While Mark’s opponents averaged just one more point a week than mine, his OARR was almost .5 lower. This is likely attributed to Mark’s higher variance. While I might have more consistently gone up against my opponent’s fifth or sixth best performance on the year, Mark was more likely to see their best or second best mixed in with some 7-8th best performances.</li>
+  <li>Pine Street’s opponents <em>averaged</em> their fourth worst performance of the year against them, the most extreme result on either end of the spectrum…by a lot. It will be interesting to look at this result compared to years past to see where it stacks up all time.</li>
+</ul>
+
+<p>Now for the main course. What better way to bring this study home than to tangibly quantify by how much each person outperformed or underperformed their statistical expectations? The results were pretty consistent with the previous findings plus a couple of surprises. Mark and Pine Street were at either end of the spectrum with Mark coming up almost a full two wins short of his expectations and Pine Street outkicking their coverage by close a full THREE wins. Coming up behind Pine Street is Charlie who outperformed expectations by over two wins. Nothing we haven’t seen already.</p>
+
+<p>What did come as a surprise to me was Tyler having the second largest deficit between actual and expected wins with roughly -1.5. He only had the fifth most points against and a pretty middle of the pack variance. So why was he expected to win so much more than he actually did? After looking closer I noticed an interesting occurance with Tyler’s results. His margin of a victory, whether it be low or high, was pretty large every week. Basically when he had a strong week, he happened to go against a weaker opponent score, and when he had his subpar performances he was going against strong opponent scores.</p>
+
+<p>That sounds pretty normal: when you don’t do well you’re more likely to lose and when you do well you’re more likely to win. But where Tyler became unlucky is that he didn’t have a single occurance where he his team was able to not do their best and still steal a win. He had zero victories where his team scored less than 100 points. For context, Pine Street had four such occurances, Charlie had six (out of his 7 possible), and Roger had four.</p>
+
+<p>For next time it will be interesting to determine a way to quantify that scenario. It sounds like a “quality wins” metric is in order. For now it’s time to wrap this up. I think it’s become pretty clear that for this season Mark took the crown for most unlucky with myself and Tyler not too far behind. Purely based off of opponent performance I think I had worse luck than Tyler. But when you factor in that Tyler had a better team and thus had higher expectations the argument could be made that he had it worse. I’ll leave that up to you.</p>
+
+<p>On the other side of the spectrum I can’t even say that this was anything other than a one horse race. Pine Street took the cake in a landslide. To put up below average scoring numbers and come out of the regular season tied for the league lead in victories is quite remarkable. I’m excited to see how this compares with years past. The only other person who was within reach was Charlie who also separated himself from the pack by somehow winning seven games while putting up the third fewest points in the league.</p>
+
+<p>I believe the chart below does the best job at capturing everyone’s luck on a scale. On the x-axis is the win differential (relative to schedules) and on the y-axis is OARR. The top right represents the luckier folks while the bottom left represents the less fortunate of the bunch.</p>
+
+<p><img src="/assets/fantasy-gods/2019/oarr_win_diff.png" alt="" /></p>
+
+<p>So there you have it. My first stab at quantifying luck. Going forward, I hope to continue doing this for all seasons in the future and in the past and will be sure to post them here if/when I do. If you have any questions, thoughts, <strong>corrections</strong>, comments, etc…I’d love to hear them so pass them along!</p>
+
+<h3 id="appendix">Appendix</h3>
+<p><strong>League Context:</strong></p>
+<ul>
+  <li>Standard scoring - No decimals, small bonuses for long touchdowns and yardage totals</li>
+  <li>Rosters - 1 QB, 2 RB, 2 WR, 1 TE, 1 RB/WR/TE, 1 K, 1 D/ST</li>
+  <li>Three divisions, four teams per division</li>
+  <li>Play division opponents twice, and seven of eight remaining teams once</li>
+  <li>Divisions winners seeded 1-3 (first be record, then by points), followed by three wildcard teams</li>
+</ul>
+
+<p><strong>Figures:</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Owner</th>
+      <th>Points For</th>
+      <th>Points Against</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Charles</td>
+      <td><a href="/assets/fantasy-gods/2019/points_for_charles.png">Figure 1</a></td>
+      <td><a href="/assets/fantasy-gods/2019/points_against_charles.png">Figure 2</a></td>
+    </tr>
+    <tr>
+      <td>Charlie</td>
+      <td><a href="/assets/fantasy-gods/2019/points_for_charlie.png">Figure 3</a></td>
+      <td><a href="/assets/fantasy-gods/2019/points_against_charlie.png">Figure 4</a></td>
+    </tr>
+    <tr>
+      <td>Connor</td>
+      <td><a href="/assets/fantasy-gods/2019/points_for_connor.png">Figure 5</a></td>
+      <td><a href="/assets/fantasy-gods/2019/points_against_connor.png">Figure 6</a></td>
+    </tr>
+    <tr>
+      <td>Fish</td>
+      <td><a href="/assets/fantasy-gods/2019/points_for_fish.png">Figure 7</a></td>
+      <td><a href="/assets/fantasy-gods/2019/points_against_fish.png">Figure 8</a></td>
+    </tr>
+    <tr>
+      <td>Fratt</td>
+      <td><a href="/assets/fantasy-gods/2019/points_for_fratt.png">Figure 9</a></td>
+      <td><a href="/assets/fantasy-gods/2019/points_against_fratt.png">Figure 10</a></td>
+    </tr>
+    <tr>
+      <td>Keefe</td>
+      <td><a href="/assets/fantasy-gods/2019/points_for_keefe.png">Figure 11</a></td>
+      <td><a href="/assets/fantasy-gods/2019/points_against_keefe.png">Figure 12</a></td>
+    </tr>
+    <tr>
+      <td>Mark</td>
+      <td><a href="/assets/fantasy-gods/2019/points_for_mark.png">Figure 13</a></td>
+      <td><a href="/assets/fantasy-gods/2019/points_against_mark.png">Figure 14</a></td>
+    </tr>
+    <tr>
+      <td>Nick</td>
+      <td><a href="/assets/fantasy-gods/2019/points_for_nick.png">Figure 15</a></td>
+      <td><a href="/assets/fantasy-gods/2019/points_against_nick.png">Figure 16</a></td>
+    </tr>
+    <tr>
+      <td>Pine</td>
+      <td><a href="/assets/fantasy-gods/2019/points_for_pine.png">Figure 17</a></td>
+      <td><a href="/assets/fantasy-gods/2019/points_against_pine.png">Figure 18</a></td>
+    </tr>
+    <tr>
+      <td>Roger</td>
+      <td><a href="/assets/fantasy-gods/2019/points_for_roger.png">Figure 19</a></td>
+      <td><a href="/assets/fantasy-gods/2019/points_against_roger.png">Figure 20</a></td>
+    </tr>
+    <tr>
+      <td>Scott</td>
+      <td><a href="/assets/fantasy-gods/2019/points_for_scott.png">Figure 21</a></td>
+      <td><a href="/assets/fantasy-gods/2019/points_against_scott.png">Figure 22</a></td>
+    </tr>
+    <tr>
+      <td>Tyler</td>
+      <td><a href="/assets/fantasy-gods/2019/points_for_tyler.png">Figure 23</a></td>
+      <td><a href="/assets/fantasy-gods/2019/points_against_tyler.png">Figure 24</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Expected Wins Relative To League-Wide Scoring Distribution:</strong></p>
+
+<p>A quick note regarding the findings - In our league we have three divisions with four teams in each division. Each person plays everyone in their division twice and seven of the other eight owners once in the regular season. There were six owners who shared a division with either Nick or Keefe (two lowest scorers on the year) and all six of them have an expected value of schedule wins greater than their expected number of wins relative to the league has a whole. Those six are Pine, Connor, Mark, Fratt, Tyler, and Roger. Similarly, there were four owners who went up against Keefe or Nick one time combined: myself, Fish, Keefe, and Nick. All four of us had less expected wins relative to our schedules than we had relative to the league averages. The only other person to have less expected schedule wins was Charlie who played the weakest links twice.</p>
+
+<p>The following table represents expected wins relative to the league-wide scoring distribution.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Owner</th>
+      <th>Actual Win Count</th>
+      <th>Expected Wins</th>
+      <th>Difference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>charles</td>
+      <td>6</td>
+      <td>6.97</td>
+      <td>-0.97</td>
+    </tr>
+    <tr>
+      <td>charlie</td>
+      <td>7</td>
+      <td>4.862</td>
+      <td>2.138</td>
+    </tr>
+    <tr>
+      <td>connor</td>
+      <td>8</td>
+      <td>7.517</td>
+      <td>0.483</td>
+    </tr>
+    <tr>
+      <td>fish</td>
+      <td>6</td>
+      <td>5.907</td>
+      <td>0.093</td>
+    </tr>
+    <tr>
+      <td>fratt</td>
+      <td>9</td>
+      <td>8.674</td>
+      <td>0.326</td>
+    </tr>
+    <tr>
+      <td>keefe</td>
+      <td>4</td>
+      <td>4.484</td>
+      <td>-0.484</td>
+    </tr>
+    <tr>
+      <td>mark</td>
+      <td>5</td>
+      <td>6.806</td>
+      <td>-1.806</td>
+    </tr>
+    <tr>
+      <td>nick</td>
+      <td>2</td>
+      <td>2.916</td>
+      <td>-0.916</td>
+    </tr>
+    <tr>
+      <td>pine</td>
+      <td>9</td>
+      <td>5.812</td>
+      <td>3.188</td>
+    </tr>
+    <tr>
+      <td>roger</td>
+      <td>7</td>
+      <td>6.334</td>
+      <td>0.666</td>
+    </tr>
+    <tr>
+      <td>scott</td>
+      <td>8</td>
+      <td>8.399</td>
+      <td>-0.399</td>
+    </tr>
+    <tr>
+      <td>tyler</td>
+      <td>7</td>
+      <td>8.388</td>
+      <td>-1.388</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The following table shows the comparison of expected wins relative to each person’s schedule and the league average.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Owner</th>
+      <th>Actual</th>
+      <th>Expected (Schedule)</th>
+      <th>Expected (League)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>charles</td>
+      <td>6</td>
+      <td>6.834</td>
+      <td>6.97</td>
+    </tr>
+    <tr>
+      <td>charlie</td>
+      <td>7</td>
+      <td>4.764</td>
+      <td>4.862</td>
+    </tr>
+    <tr>
+      <td>connor</td>
+      <td>8</td>
+      <td>7.789</td>
+      <td>7.517</td>
+    </tr>
+    <tr>
+      <td>fish</td>
+      <td>6</td>
+      <td>5.76</td>
+      <td>5.907</td>
+    </tr>
+    <tr>
+      <td>fratt</td>
+      <td>9</td>
+      <td>9.179</td>
+      <td>8.674</td>
+    </tr>
+    <tr>
+      <td>keefe</td>
+      <td>4</td>
+      <td>4.368</td>
+      <td>4.484</td>
+    </tr>
+    <tr>
+      <td>mark</td>
+      <td>5</td>
+      <td>6.886</td>
+      <td>6.806</td>
+    </tr>
+    <tr>
+      <td>nick</td>
+      <td>2</td>
+      <td>2.476</td>
+      <td>2.916</td>
+    </tr>
+    <tr>
+      <td>pine</td>
+      <td>9</td>
+      <td>6.041</td>
+      <td>5.812</td>
+    </tr>
+    <tr>
+      <td>roger</td>
+      <td>7</td>
+      <td>6.466</td>
+      <td>6.334</td>
+    </tr>
+    <tr>
+      <td>scott</td>
+      <td>8</td>
+      <td>8.803</td>
+      <td>8.399</td>
+    </tr>
+    <tr>
+      <td>tyler</td>
+      <td>7</td>
+      <td>8.634</td>
+      <td>8.388</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Technologies:</strong></p>
+<ul>
+  <li>Code written in Python 3</li>
+  <li>Main libraries used: stats, pyplot</li>
+</ul>
+
+  </div><a class="u-url" href="/fantasy_football/math/python/2020/01/22/fantasy-gods-hate-me.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Charlie Kaminer Wrote Some Stuff</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Charles Kaminer</li><li><a class="u-email" href="mailto:cjkaminer@gmail.com">cjkaminer@gmail.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/ckaminer"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">ckaminer</span></a></li><li><a href="https://www.twitter.com/cjkaminer"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">cjkaminer</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>I&#39;m a New York City based software developer, currently working as an on-site  consultant for a large search company. Before moving to New York in May 2019 I was building out infrastructure on the Automation &amp; Orchestration team for Allstate&#39;s Compozed Labs.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
