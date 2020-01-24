@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-01-22T21:06:04-05:00</updated><id>/feed.xml</id><title type="html">Charlie Kaminer Wrote Some Stuff</title><subtitle>I'm a New York City based software developer, currently working as an on-site  consultant for a large search company. Before moving to New York in May 2019 I was building out infrastructure on the Automation &amp; Orchestration team for Allstate's Compozed Labs.</subtitle><author><name>Charles Kaminer</name></author><entry><title type="html">The Fantasy Gods Hate Me</title><link href="/fantasy_football/math/python/2020/01/22/fantasy-gods-hate-me.html" rel="alternate" type="text/html" title="The Fantasy Gods Hate Me" /><published>2020-01-22T00:00:00-05:00</published><updated>2020-01-22T00:00:00-05:00</updated><id>/fantasy_football/math/python/2020/01/22/fantasy-gods-hate-me</id><content type="html" xml:base="/fantasy_football/math/python/2020/01/22/fantasy-gods-hate-me.html">&lt;h3 id=&quot;introduction&quot;&gt;Introduction&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-01-24T09:38:22-05:00</updated><id>/feed.xml</id><title type="html">Charlie Kaminer Wrote Some Stuff</title><subtitle>I'm a New York City based software developer, currently working as an on-site  consultant for a large search company. Before moving to New York in May 2019 I was building out infrastructure on the Automation &amp; Orchestration team for Allstate's Compozed Labs.</subtitle><author><name>Charles Kaminer</name></author><entry><title type="html">The Fantasy Gods Hate Me</title><link href="/fantasy_football/math/python/2020/01/22/fantasy-gods-hate-me.html" rel="alternate" type="text/html" title="The Fantasy Gods Hate Me" /><published>2020-01-22T00:00:00-05:00</published><updated>2020-01-22T00:00:00-05:00</updated><id>/fantasy_football/math/python/2020/01/22/fantasy-gods-hate-me</id><content type="html" xml:base="/fantasy_football/math/python/2020/01/22/fantasy-gods-hate-me.html">&lt;h3 id=&quot;introduction&quot;&gt;Introduction&lt;/h3&gt;
 &lt;p&gt;A running saying in my fantasy football league is ‘the fantasy gods must just hate me’. Although it’s used by some far more than others, everyone has said or thought it, at least once. Luck is an undeniably large part of the game when it comes to fantasy football. Sure there are rules that a league can implement to reduce it, but like most competitions we can never fully get rid of it.&lt;/p&gt;
 
 &lt;p&gt;Fantasy football is a game in which you, as a competitor, have no way of affecting your opponent. There are things you can try such as neutralizing some of their scoring by starting their quarterback’s recievers, or doubling down on a matchup by starting their best player’s opposing defense (PSA: these strategies are proven to be &lt;a href=&quot;https://www.pro-football-reference.com/articles/corrgaus.htm&quot;&gt;statistically insignificant&lt;/a&gt;). But ultimately it comes down to a weekly generation of numbers out of two independent data sets, with each player doing nothing more than praying that theirs is higher. So then why bother having matchups? Why isn’t the standard to have a Rotisserie league where you gain points for your performance relative to the &lt;em&gt;entire league&lt;/em&gt;, not just one randomly assigned opponent? Or why don’t we just name the player at the end of the season with the most points the champion? The reason is simply that matchups are fun - they give us that “any given Sunday” vibe and tickle everyone’s inner gambler. What it also means is that the “best” team doesn’t always win - it brings luck into the picture.&lt;/p&gt;
@@ -626,8 +626,47 @@ E[X] = p
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;p&gt;&lt;strong&gt;Technologies:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Code written in Python 3&lt;/li&gt;
-  &lt;li&gt;Main libraries used: stats, pyplot&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Charles Kaminer</name></author><summary type="html">Introduction A running saying in my fantasy football league is ‘the fantasy gods must just hate me’. Although it’s used by some far more than others, everyone has said or thought it, at least once. Luck is an undeniably large part of the game when it comes to fantasy football. Sure there are rules that a league can implement to reduce it, but like most competitions we can never fully get rid of it.</summary></entry></feed>
+&lt;p&gt;&lt;strong&gt;“What if…“&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Below you can find a comparison of the actual playoff results with what the playoff standings and results would have looked like based off of expected schedule-relative wins. Divisions were still taken into account - top three seeds are division winners, three wildcards. The results are based off of actual scores from weeks 14-16.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Actual Standings&lt;/th&gt;
+      &lt;th&gt;Expected Standings&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1. Fratt - BYE&lt;br /&gt;2. Pine - BYE&lt;br /&gt;3. Scott&lt;br /&gt;4. Connor&lt;br /&gt;5. Tyler&lt;br /&gt;6. Roger&lt;/td&gt;
+      &lt;td&gt;1. Fratt - BYE&lt;br /&gt;2. Scott - BYE&lt;br /&gt;3. Connor&lt;br /&gt;4. Tyler&lt;br /&gt;5. Mark&lt;br /&gt;6. Charles&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;em&gt;Actual Results:&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Round 1
+Roger(6) def. Scott(3)
+Connor(4) def. Tyler(5)
+
+Round 2
+Roger(6) def. Pine(2)
+Connnor(4) def. Fratt(1)
+
+Championship
+Connor(4) def. Roger(6)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;em&gt;Expected Results:&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Round 1
+Connor(3) def. Charles(6)
+Tyler(4) def. Mark(5)
+
+Round 2
+Tyler(4) def. Fratt(1)
+Connnor(3) def. Scott(2)
+
+Championship
+Tyler(4) def. Connor(3)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Charles Kaminer</name></author><summary type="html">Introduction A running saying in my fantasy football league is ‘the fantasy gods must just hate me’. Although it’s used by some far more than others, everyone has said or thought it, at least once. Luck is an undeniably large part of the game when it comes to fantasy football. Sure there are rules that a league can implement to reduce it, but like most competitions we can never fully get rid of it.</summary></entry></feed>
