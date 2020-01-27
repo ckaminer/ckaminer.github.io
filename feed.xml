@@ -1,4 +1,498 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-01-24T09:38:22-05:00</updated><id>/feed.xml</id><title type="html">Charlie Kaminer Wrote Some Stuff</title><subtitle>I'm a New York City based software developer, currently working as an on-site  consultant for a large search company. Before moving to New York in May 2019 I was building out infrastructure on the Automation &amp; Orchestration team for Allstate's Compozed Labs.</subtitle><author><name>Charles Kaminer</name></author><entry><title type="html">The Fantasy Gods Hate Me</title><link href="/fantasy_football/math/python/2020/01/22/fantasy-gods-hate-me.html" rel="alternate" type="text/html" title="The Fantasy Gods Hate Me" /><published>2020-01-22T00:00:00-05:00</published><updated>2020-01-22T00:00:00-05:00</updated><id>/fantasy_football/math/python/2020/01/22/fantasy-gods-hate-me</id><content type="html" xml:base="/fantasy_football/math/python/2020/01/22/fantasy-gods-hate-me.html">&lt;h3 id=&quot;introduction&quot;&gt;Introduction&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-01-26T22:19:16-05:00</updated><id>/feed.xml</id><title type="html">Charlie Kaminer Wrote Some Stuff</title><subtitle>I'm a New York City based software developer, currently working as an on-site  consultant for a large search company. Before moving to New York in May 2019 I was building out infrastructure on the Automation &amp; Orchestration team for Allstate's Compozed Labs.</subtitle><author><name>Charles Kaminer</name></author><entry><title type="html">Super Bowl Squarigami</title><link href="/2020/01/26/super-bowl-squarigami.html" rel="alternate" type="text/html" title="Super Bowl Squarigami" /><published>2020-01-26T00:00:00-05:00</published><updated>2020-01-26T00:00:00-05:00</updated><id>/2020/01/26/super-bowl-squarigami</id><content type="html" xml:base="/2020/01/26/super-bowl-squarigami.html">&lt;p&gt;Super Bowl week. What a bittersweet time in every football fan’s life. Late January, middle of winter, you have the greatest sporting event of the year right in front of you (the Super Bowl, sorry Pro Bowl fans), but you know that once the final whistle blows you’ll have nothing to do but wait until April when you have Mel Kiper’s glorious mug on your screen yelling at you about “this guy being the real deal, Todd. He’s a stud”.&lt;/p&gt;
+
+&lt;p&gt;One of my favorite things that comes with the Super Bowl is participaing in squares. I remember being a kid watching the Super Bowl with my dad and him telling me that “Grandma bought me a square” from his Rotary fundraiser and explaining to me how it works. For those of you that don’t know what I’m talking about, read &lt;a href=&quot;https://www.superbowlsquares.org/how-to-play&quot;&gt;this article&lt;/a&gt; explaining how it works. It’s like buying a scratch ticket for the Super Bowl. What’s not to love?&lt;/p&gt;
+
+&lt;p&gt;Over the last few years I have organized a few squares myself and I, like millions across the country, love the anticipation of waiting for the grid to fill up so that I can draw the numbers and see what I have. Although any combination is possible, there are some combos that feel like an automatic loss while others make you feel like you &lt;em&gt;must&lt;/em&gt; be about to win at least one quarter. For non-Football Guy’s Guy readers, the numbers you typically want to have are 0, 7, 3, and 4 aka football numbers. These are popular due to the frequency of three point field goals and seven point touchdowns. On the other end of the spectrum, when you get nubmers like 5, 2, and 8 you feel like you just lit your money on fire. These numbers typically require a weird scoring play like a safety, missed extra point, etc. Either way, there’s always a chance and it gives you a little something extra to watch for during the biggest game of the year.&lt;/p&gt;
+
+&lt;p&gt;Another thing I love watching for during football games is “Scorigami”. If you don’t know what Scorigami is, I suppose I don’t blame you. If you know me (which if you’re reading this means you do because I probably sent you the link and appreciate you making it this far) then it’s well established that I’m a nerd. Not a geek, a nerd. Scorigami is basically the transfused nectar of nerds and football. From the “What is Scorigami?” section of &lt;a href=&quot;https://nflscorigami.com/&quot;&gt;nflscorigami.com&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Scorigami is a concept thought up by Jon Bois. It is the art of building final scores that have never happened before in NFL history. Due to the unique nature of how points are scored in (American) Football, where it is impossible to score 1 point on its own, as well as the rarity of the 2 point safety and 8 point touchdown and 2 point conversion, there are a lot of scores that are possible, but have never happened.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Basically it keeps track of how many times a score has occurred in an NFL game and puts it into a nice readable chart. When a game score occurs that has never happened before, it is called “scorigami”. The &lt;a href=&quot;https://twitter.com/nfl_scorigami&quot;&gt;Scorigami Twitter account&lt;/a&gt; is one of my favorite follows as it tweets out live Scorigami updates during NFL games. Any time a quarter finishes or a team scores, the account sends out a tweet with percentage chance that a game ends in Scorigami as well as the most likely Scorigami result.&lt;/p&gt;
+
+&lt;p&gt;This year while setting up the board for Super Bowl squares I started wondering which results are the most popular and which, if any, have never occurred. And that is what brings us here. I wanted to look at Super Bowl squares through the lense of Scorigami…Super Bowl Squarigami.&lt;/p&gt;
+
+&lt;h3 id=&quot;mapping-it-all-out&quot;&gt;Mapping It All Out&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;*speaking to inner self*&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;“Wow this is gonna be a fun project. Not only is it focused on two things you love, but it’s topical! Shoutout you. Take a bow. Grab a slice.”&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;*starts actually working on project*&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;“Does anyone have the box score of every Super Bowl indexed by quarter that I could borrow? No? Ok cool. I’ll think of something…”&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;*a couple hours later*&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;“Tonight wasn’t a total waste. Manually recording every Super Bowl box score in order by date is admirable. I’ll be able to jump right in tomorrow.”&lt;/p&gt;
+
+&lt;p&gt;After taking some time to gather all of the required data the first thing I wanted to do was overlay the count of each result onto a typical Super Bowl square grid. It’s not the easiest on the eyes but this one will be fun to come back to when squares are filled up and everyone has their numbers.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/squarigami/league_specific_distribution.png&quot; width=&quot;600px&quot; height=&quot;480px&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;One thing to note here is that this chart is specific to the AFC and NFC scores. This means that the combination of, say, 5 and 3 appears twice - once when the AFC number is 5 and the NFC number is 3, and once when the AFC number is 3 and the NFC number is 5. This is consistent with the rules of Super Bowl squares in the sense that your numbers need to match up with the right teams, but it is not very Scorigami-like.&lt;/p&gt;
+
+&lt;p&gt;Naturally, the next step should be to show the distribution of occurances regardless of which team has each number. Now we’ll have something that resembles the Scorigami chart a little bit more.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/squarigami/league_agnostic_distribution.png&quot; width=&quot;600px&quot; height=&quot;480px&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Another version of this chart with percentages and a heat map can be found &lt;a href=&quot;/assets/squarigami/league_agnostic_percentages.png&quot;&gt;here&lt;/a&gt;. Idea for future self: make up one of these grids and instead of pulling numbers randomly, assign prices based off of likelihood that combination occurs. That will be really fun and I’m sure a ton of people will want to participate and I won’t need my dad buy any empty squares at the end to fill it up.&lt;/p&gt;
+
+&lt;h3 id=&quot;anything-interesting&quot;&gt;Anything Interesting?&lt;/h3&gt;
+
+&lt;p&gt;Now that we have our data charted let’s dissect it a bit further to see what history has taught us about “football numbers” and which squares we should keep an eye on when the drawing of numbers come out.&lt;/p&gt;
+
+&lt;h4 id=&quot;most-popular-combinations&quot;&gt;Most Popular Combinations&lt;/h4&gt;
+&lt;p&gt;The three most popular combinations are:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;7-0 (20 occurrences)&lt;/li&gt;
+  &lt;li&gt;3-0 (18 occurrences)&lt;/li&gt;
+  &lt;li&gt;0-0 (17 occurrences)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;From that alone we can see that football numbers are &lt;strong&gt;real&lt;/strong&gt; and that you should &lt;em&gt;really&lt;/em&gt; be pulling for a zero when your square numbers come out. In addition to those top three there are three other combinations that have occurred 10 times or more:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;7-3 (15 occurrences)&lt;/li&gt;
+  &lt;li&gt;4-0 (12 occurrences)&lt;/li&gt;
+  &lt;li&gt;7-4 (11 occurrences)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Of the 212 Super Bowl square results that have occurred, the top three make up 26%, with the top six making up nearly 44%. If we take teams into account we have the following three most popular outcomes:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;AFC: 0, NFC: 0 - 17 occurrences&lt;/li&gt;
+  &lt;li&gt;AFC: 7, NFC: 0 - 12 occurrences&lt;/li&gt;
+  &lt;li&gt;AFC: 4, NFC: 0 - 10 occurrences&lt;/li&gt;
+  &lt;li&gt;AFC: 0, NFC: 3 - 10 occurrences&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;maybe-one-day&quot;&gt;Maybe One Day…&lt;/h4&gt;
+&lt;p&gt;There are still 13 combinations (out of a possible 55) that have never occurred on a Super Bowl square. Good luck on making history if you have any of the following combinations:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;1-1&lt;/li&gt;
+  &lt;li&gt;2-1&lt;/li&gt;
+  &lt;li&gt;3-2&lt;/li&gt;
+  &lt;li&gt;5-2&lt;/li&gt;
+  &lt;li&gt;5-3&lt;/li&gt;
+  &lt;li&gt;5-4&lt;/li&gt;
+  &lt;li&gt;5-5&lt;/li&gt;
+  &lt;li&gt;6-2&lt;/li&gt;
+  &lt;li&gt;6-5&lt;/li&gt;
+  &lt;li&gt;8-5&lt;/li&gt;
+  &lt;li&gt;8-7&lt;/li&gt;
+  &lt;li&gt;8-8&lt;/li&gt;
+  &lt;li&gt;9-9&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The only real surprises I see are 1-1 and 8-8. I would have expected at least one quarter of a Super Bowl to end in a 21-21 tie or 31-21. I’d say the same about a 28-28 score but technically that has happened before. However, it didn’t end up in Squarigami…&lt;/p&gt;
+
+&lt;p&gt;At this time I would like to give a special shoutout to an owners of the square 8-8 during &lt;a href=&quot;https://www.youtube.com/watch?v=016LXFHpFCk&quot;&gt;Super Bowl LI&lt;/a&gt; between the Falcons and the Patriots. During arguably the greatest Super Bowl/football game in the history of the sport, the Patriots completed a most improbable comeback. After being down 28-3 they crawled all the back to tie the game at 28-28 to force overtime. Unfortuantely, Super Bowl squares award payouts for quarters 1-3 and the &lt;em&gt;final&lt;/em&gt; score, rendering the 8-8 square at the end of four quarters a loser. The Patriots ended up scoring a touchdown in overtime for a final score of 34-28. Oddly enough, the 8-4 combo had also never occurred in Super Bowl square history. We can only hope that 8-4 and 8-8 were watching in a room together.&lt;/p&gt;
+
+&lt;h4 id=&quot;rankings-by-single-numbers&quot;&gt;Rankings By Single Numbers&lt;/h4&gt;
+
+&lt;p&gt;Here is a look at the most common single numbers to appear in a result.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Result&lt;/th&gt;
+      &lt;th&gt;Occurrences&lt;/th&gt;
+      &lt;th&gt;Percent&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;96&lt;/td&gt;
+      &lt;td&gt;45.28%&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;25&lt;/td&gt;
+      &lt;td&gt;11.79%&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;11&lt;/td&gt;
+      &lt;td&gt;5.19%&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;60&lt;/td&gt;
+      &lt;td&gt;28.30%&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;42&lt;/td&gt;
+      &lt;td&gt;19.81%&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;5&lt;/td&gt;
+      &lt;td&gt;10&lt;/td&gt;
+      &lt;td&gt;4.72%&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;6&lt;/td&gt;
+      &lt;td&gt;33&lt;/td&gt;
+      &lt;td&gt;15.57%&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;7&lt;/td&gt;
+      &lt;td&gt;73&lt;/td&gt;
+      &lt;td&gt;34.43%&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;8&lt;/td&gt;
+      &lt;td&gt;16&lt;/td&gt;
+      &lt;td&gt;7.55%&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;9&lt;/td&gt;
+      &lt;td&gt;20&lt;/td&gt;
+      &lt;td&gt;9.43%&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Let’s say it all together now: “0, 3, 7 = FOOTBALL NUMBERS. 2, 5, 8 = ANTI FOOTBALL NUMBERS”
+Glad we finally got that cleared up.&lt;/p&gt;
+
+&lt;h4 id=&quot;repeat-offenders&quot;&gt;Repeat Offenders&lt;/h4&gt;
+
+&lt;p&gt;I was curious how often squares repeat themselves. Any time you win a quarter it’s fun to talk yourself into rooting for each team to score zero (or 10, 20, etc.) points in order to double dip on your winning square. The box scores show that twenty three times in Super Bowl history has there been a repeat winner. The last repeat came in the most recent Super Bowl, Super Bowl LIII, when a 10-0 fourth quarter propelled Tom Brady and the Patriots to their sixth championship. Another Patriots Super Bowl reference…weird.&lt;/p&gt;
+
+&lt;p&gt;To dig a little further into those numbers: of the 23 repeats, ten of them were the results of a scoreless quarter, twelve were the results of a 10-0 quarter, and one was the result of a 10-10 quarter - the second quarter of Super Bowl XVII (1982 season) between the Dolphins and the Redskins.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Super Bowl XVII&lt;/th&gt;
+      &lt;th&gt;1&lt;/th&gt;
+      &lt;th&gt;2&lt;/th&gt;
+      &lt;th&gt;3&lt;/th&gt;
+      &lt;th&gt;4&lt;/th&gt;
+      &lt;th&gt;Final&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Miami&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;7&lt;/td&gt;
+      &lt;td&gt;10&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;17&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Washington&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;10&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;14&lt;/td&gt;
+      &lt;td&gt;27&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;There have been two games in which the same square won THREE quarters.&lt;/p&gt;
+
+&lt;p&gt;Super Bowl V between the Baltimore Colts and the Cowboys following the 1971 season:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Super Bowl V&lt;/th&gt;
+      &lt;th&gt;1&lt;/th&gt;
+      &lt;th&gt;2&lt;/th&gt;
+      &lt;th&gt;3&lt;/th&gt;
+      &lt;th&gt;4&lt;/th&gt;
+      &lt;th&gt;Final&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Baltimore&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;6&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;10&lt;/td&gt;
+      &lt;td&gt;16&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Dallas&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;10&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;13&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Super Bowl XIX between the Dolphins and 49ers following the 1984 season:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Super Bowl XIX&lt;/th&gt;
+      &lt;th&gt;1&lt;/th&gt;
+      &lt;th&gt;2&lt;/th&gt;
+      &lt;th&gt;3&lt;/th&gt;
+      &lt;th&gt;4&lt;/th&gt;
+      &lt;th&gt;Final&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Miami&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;10&lt;/td&gt;
+      &lt;td&gt;6&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;16&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;San Francisco&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;7&lt;/td&gt;
+      &lt;td&gt;21&lt;/td&gt;
+      &lt;td&gt;10&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;38&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;There has been one case of a game having two different repeat winners. In Super Bowl XVIII (1993 season) between the Cowboys and Bills, quarters one and two were the same square with quarter three and the final also being the same.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Super Bowl XVIII&lt;/th&gt;
+      &lt;th&gt;1&lt;/th&gt;
+      &lt;th&gt;2&lt;/th&gt;
+      &lt;th&gt;3&lt;/th&gt;
+      &lt;th&gt;4&lt;/th&gt;
+      &lt;th&gt;Final&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Dallas&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;6&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;14&lt;/td&gt;
+      &lt;td&gt;10&lt;/td&gt;
+      &lt;td&gt;30&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Buffalo&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;10&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;13&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;A bit to my surprise, there has never been a repeat winner that did not win back to back quarters. For example if the AFC team were to score 10 points over the course of quarters 2-3 and the NFC team were to score 20 points during that same span, then the person with the winning square from quarter one would also win the third quarter while not necessarily winning the second quarter.&lt;/p&gt;
+
+&lt;h3 id=&quot;all-i-got-for-now&quot;&gt;All I Got For Now&lt;/h3&gt;
+
+&lt;p&gt;Thanks for reading. Hopefully this gets some of you a little more fired up for your squares. If you don’t have any squares yet and you want to get involved, I have about 30 left on my grid so reach out! I’ll also be moving some of this to Twitter to keep track of events in true Scorigami fashion. So be sure to check out &lt;a href=&quot;https://twitter.com/SB_squarigami&quot;&gt;@SB_squarigami&lt;/a&gt; and smash that follow button.&lt;/p&gt;
+
+&lt;p&gt;And now, for no other reason than the fact that this is my site and I can do whatever I want, I present to you all of the box scores from Tom Brady’s six Super Bowl championships.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Super Bowl XXXVI&lt;/th&gt;
+      &lt;th&gt;1&lt;/th&gt;
+      &lt;th&gt;2&lt;/th&gt;
+      &lt;th&gt;3&lt;/th&gt;
+      &lt;th&gt;4&lt;/th&gt;
+      &lt;th&gt;Final&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;St. Louis&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;14&lt;/td&gt;
+      &lt;td&gt;17&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;New England&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;14&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;20&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Super Bowl XXXVIII&lt;/th&gt;
+      &lt;th&gt;1&lt;/th&gt;
+      &lt;th&gt;2&lt;/th&gt;
+      &lt;th&gt;3&lt;/th&gt;
+      &lt;th&gt;4&lt;/th&gt;
+      &lt;th&gt;Final&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Carolina&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;10&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;19&lt;/td&gt;
+      &lt;td&gt;29&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;New England&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;14&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;18&lt;/td&gt;
+      &lt;td&gt;32&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Super Bowl XXXIX&lt;/th&gt;
+      &lt;th&gt;1&lt;/th&gt;
+      &lt;th&gt;2&lt;/th&gt;
+      &lt;th&gt;3&lt;/th&gt;
+      &lt;th&gt;4&lt;/th&gt;
+      &lt;th&gt;Final&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;New England&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;7&lt;/td&gt;
+      &lt;td&gt;7&lt;/td&gt;
+      &lt;td&gt;10&lt;/td&gt;
+      &lt;td&gt;24&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Philadelphia&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;7&lt;/td&gt;
+      &lt;td&gt;7&lt;/td&gt;
+      &lt;td&gt;7&lt;/td&gt;
+      &lt;td&gt;21&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Super Bowl XLIX&lt;/th&gt;
+      &lt;th&gt;1&lt;/th&gt;
+      &lt;th&gt;2&lt;/th&gt;
+      &lt;th&gt;3&lt;/th&gt;
+      &lt;th&gt;4&lt;/th&gt;
+      &lt;th&gt;Final&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;New England&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;14&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;14&lt;/td&gt;
+      &lt;td&gt;28&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Seattle&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;14&lt;/td&gt;
+      &lt;td&gt;10&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;24&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Super Bowl LI&lt;/th&gt;
+      &lt;th&gt;1&lt;/th&gt;
+      &lt;th&gt;2&lt;/th&gt;
+      &lt;th&gt;3&lt;/th&gt;
+      &lt;th&gt;4&lt;/th&gt;
+      &lt;th&gt;OT&lt;/th&gt;
+      &lt;th&gt;Final&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;New England&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;6&lt;/td&gt;
+      &lt;td&gt;19&lt;/td&gt;
+      &lt;td&gt;6&lt;/td&gt;
+      &lt;td&gt;34&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Seattle&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;21&lt;/td&gt;
+      &lt;td&gt;7&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;28&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Super Bowl LIII&lt;/th&gt;
+      &lt;th&gt;1&lt;/th&gt;
+      &lt;th&gt;2&lt;/th&gt;
+      &lt;th&gt;3&lt;/th&gt;
+      &lt;th&gt;4&lt;/th&gt;
+      &lt;th&gt;Final&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;New England&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;10&lt;/td&gt;
+      &lt;td&gt;13&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;St. Louis&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content><author><name>Charles Kaminer</name></author><category term="football" /><category term="Super Bowl squares" /><category term="Squarigami" /><summary type="html">Super Bowl week. What a bittersweet time in every football fan’s life. Late January, middle of winter, you have the greatest sporting event of the year right in front of you (the Super Bowl, sorry Pro Bowl fans), but you know that once the final whistle blows you’ll have nothing to do but wait until April when you have Mel Kiper’s glorious mug on your screen yelling at you about “this guy being the real deal, Todd. He’s a stud”.</summary></entry><entry><title type="html">The Fantasy Gods Hate Me</title><link href="/fantasy_football/math/python/2020/01/22/fantasy-gods-hate-me.html" rel="alternate" type="text/html" title="The Fantasy Gods Hate Me" /><published>2020-01-22T00:00:00-05:00</published><updated>2020-01-22T00:00:00-05:00</updated><id>/fantasy_football/math/python/2020/01/22/fantasy-gods-hate-me</id><content type="html" xml:base="/fantasy_football/math/python/2020/01/22/fantasy-gods-hate-me.html">&lt;h3 id=&quot;introduction&quot;&gt;Introduction&lt;/h3&gt;
 &lt;p&gt;A running saying in my fantasy football league is ‘the fantasy gods must just hate me’. Although it’s used by some far more than others, everyone has said or thought it, at least once. Luck is an undeniably large part of the game when it comes to fantasy football. Sure there are rules that a league can implement to reduce it, but like most competitions we can never fully get rid of it.&lt;/p&gt;
 
 &lt;p&gt;Fantasy football is a game in which you, as a competitor, have no way of affecting your opponent. There are things you can try such as neutralizing some of their scoring by starting their quarterback’s recievers, or doubling down on a matchup by starting their best player’s opposing defense (PSA: these strategies are proven to be &lt;a href=&quot;https://www.pro-football-reference.com/articles/corrgaus.htm&quot;&gt;statistically insignificant&lt;/a&gt;). But ultimately it comes down to a weekly generation of numbers out of two independent data sets, with each player doing nothing more than praying that theirs is higher. So then why bother having matchups? Why isn’t the standard to have a Rotisserie league where you gain points for your performance relative to the &lt;em&gt;entire league&lt;/em&gt;, not just one randomly assigned opponent? Or why don’t we just name the player at the end of the season with the most points the champion? The reason is simply that matchups are fun - they give us that “any given Sunday” vibe and tickle everyone’s inner gambler. What it also means is that the “best” team doesn’t always win - it brings luck into the picture.&lt;/p&gt;
@@ -669,4 +1163,4 @@ Connnor(3) def. Scott(2)
 
 Championship
 Tyler(4) def. Connor(3)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Charles Kaminer</name></author><summary type="html">Introduction A running saying in my fantasy football league is ‘the fantasy gods must just hate me’. Although it’s used by some far more than others, everyone has said or thought it, at least once. Luck is an undeniably large part of the game when it comes to fantasy football. Sure there are rules that a league can implement to reduce it, but like most competitions we can never fully get rid of it.</summary></entry></feed>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Charles Kaminer</name></author><category term="fantasy football" /><category term="probability" /><category term="python" /><summary type="html">Introduction A running saying in my fantasy football league is ‘the fantasy gods must just hate me’. Although it’s used by some far more than others, everyone has said or thought it, at least once. Luck is an undeniably large part of the game when it comes to fantasy football. Sure there are rules that a league can implement to reduce it, but like most competitions we can never fully get rid of it.</summary></entry></feed>
